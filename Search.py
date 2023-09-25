@@ -37,7 +37,7 @@ class LinSearch(Sort):
 
 """Module with the implementation of the BinSearch algorithm."""
 
-class BinSearch(Sort):
+class BinSearch(Search):
     """Class that represents a BinSearch implementation."""
 
     def _search(self, items):
