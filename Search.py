@@ -22,11 +22,15 @@ class Search(ABC):
     
 """Module with the implementation of the LinSearch algorithm."""
 
-class LinSearch(Sort):
+class LinSearch(Search):
     """Class that represents a LinSearch implementation."""
 
     def _search(self, items):
         # your code here
+        for i in range(len(self._items)):
+            if self._items[i] == self._target:
+                return i
+        return -1
 
         return items
 
