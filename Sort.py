@@ -12,7 +12,7 @@ class Sort(ABC):
     def _sort(self):
         """Returns the sorted version of the elements contained
         in the `_items` property.
-        Returns:
+        Returns: 
             List: The sorted elements.
         """
         pass
