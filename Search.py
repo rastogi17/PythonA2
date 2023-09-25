@@ -42,8 +42,16 @@ class BinSearch(Sort):
 
     def _search(self, items):
         # your code here
-
-        return False
+        left, right = 0, len(self._items) - 1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if self._items[mid] == self._target:
+                return mid
+            elif self._items[mid] < self._target:
+                left = mid + 1
+            else:
+                right = mid - 1
+        return -1
 
     def _time(self, items):
         # your code here
